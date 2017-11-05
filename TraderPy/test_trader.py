@@ -3,9 +3,18 @@ from trader import trader
 
 def test_trader(asset):
     monitor = trader()
-    ticker = monitor.get_ticker(asset)
-    monitor.message_bot.send_message(
-        'Current price of {}: {}'.format(asset, ticker['ask']))
+    products = []
+    for product in monitor.client.get_products():
+        if 'USD' in product['id'].upper():
+            ticker = monitor.get_ticker(product['id'])
+            products.append({product['id']: float(ticker['ask'])})
+
+    message = 'Current GDAX USD exchange rates:'
+    for product in products:
+        for key in product:
+            message += '\n{} {}'.format(key, product[key])
+
+    monitor.message_bot.send_message(message)
 
 
 test_trader('BTC-USD')
