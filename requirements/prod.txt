@@ -45,3 +45,7 @@ gdax>=1.0
 
 # Configs
 pyyaml>=3.12
+
+# Data
+pandas>=0.21
+pandas-datareader>=0.1
