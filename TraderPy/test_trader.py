@@ -6,9 +6,8 @@ def test_trader(asset):
     monitor = trader()
     products = []
     for product in monitor.client.get_products():
-        if 'USD' in product['id'].upper():
-            ticker = monitor.get_ticker(product['id'])
-            products.append({product['id']: float(ticker['ask'])})
+        ticker = monitor.get_ticker(product['id'])
+        products.append({product['id']: float(ticker['ask'])})
 
     message = 'Current GDAX USD exchange rates:'
     for product in products:
