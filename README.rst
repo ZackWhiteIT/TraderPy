@@ -2,7 +2,17 @@
 TraderPy
 ===============================
 
-Python trading bot
+TraderPy is a Python trading bot integrated with the GDAX_ & GroupMe_ RESTful APIs.
+
+.. _GDAX: https://docs.gdax.com/
+.. _GroupMe: https://dev.groupme.com/docs/v3
+
+Meet the Wolf
+-------------
+
+The Wolf is a friendly guide to the Bitcoin market. He can only speak to you right now, but future commits will make communication bilateral.
+
+.. image:: groupme_bot.png
 
 
 Quickstart
