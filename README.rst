@@ -12,7 +12,7 @@ Meet the Wolf
 
 The Wolf is a friendly guide to the Bitcoin market. He can only speak to you right now, but future commits will make communication bilateral.
 
-.. image:: groupme_bot.png
+.. image:: groupme_bot.jpg
 
 
 Quickstart
