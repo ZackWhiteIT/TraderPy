@@ -2,7 +2,7 @@
 TraderPy
 ===============================
 
-TraderPy is a Python trading bot integrated with the GDAX_ & GroupMe_ RESTful APIs.
+TraderPy is a Python trading bot integrated with the GDAX_ & GroupMe_ RESTful APIs. TraderPy is in *early* development.
 
 .. _GDAX: https://docs.gdax.com/
 .. _GroupMe: https://dev.groupme.com/docs/v3
