@@ -41,7 +41,7 @@ Flask-DebugToolbar==0.10.1
 requests>=2.9.1
 
 # Cryptocurrency
-gdax>=1.0
+cbpro==1.1.2
 
 # Configs
 pyyaml>=3.12
